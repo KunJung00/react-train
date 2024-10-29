@@ -28,20 +28,28 @@
 // console.log(typeof (tx1));
 // console.log(typeof (tx2));
 // console.log(typeof (tx3));
-//-----------------underfined Null
-let u = undefined;//ควรใส่ค่าแต่ไม่มีค่า
-console.log(u);
-u = true;
-console.log(u);
-console.log(typeof u);
+// //-----------------underfined Null
+// let u = undefined;//ควรใส่ค่าแต่ไม่มีค่า
+// console.log(u);
+// u = true;
+// console.log(u);
+// console.log(typeof u);
 
-let n = null;//มีค่าเป็น null คือไม่มีค่า
-console.log(n);
-n = true;
-console.log(n);
-console.log(typeof n);
+// let n = null;//มีค่าเป็น null คือไม่มีค่า
+// console.log(n);
+// n = true;
+// console.log(n);
+// console.log(typeof n);
+//========================================================operations
+// const s: string = "This is some text ";
+// const n: number = 1;
+// console.log(s + n);
 
-
+// const s = "This is some text ";
+// const n = 1;
+// const m = 2;
+// console.log(s + n + m);
+// console.log(s + (n + m));
 
 
 
