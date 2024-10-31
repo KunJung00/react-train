@@ -8,9 +8,9 @@
 // console.log(thistIsDefault);
 //====================================================================================== data type
 // let tx1: string = 'hello';
-// // บังคับ string 
+// // บังคับ string
 // let tx2 = 'hello';
-// // 
+// //
 // let tx3: any = 'hello';
 // // คือ type อะไรก็ได้
 
@@ -50,6 +50,65 @@
 // const m = 2;
 // console.log(s + n + m);
 // console.log(s + (n + m));
+//========================================================= Function and Parameter
+//------------------function
+// function sayHello() {
+//     console.log('Hello!');
+// }
 
+// sayHello();
 
+//------------------Parameter
+// function sayHello(name : string, age :any){
+//     console.log("hello! "+ name + " "+ age);
 
+// }
+// sayHello("jung",21)
+// sayHello("jung", "21")
+
+//------------------default parameter value
+// function sayHello(name : string , age : any, address = 'CS'){
+//     console.log("hello "+ name+' '+age+' '+address);
+
+// }
+// sayHello("jung",22);
+// sayHello('jung','21','Computer science')
+
+//------------------optional parameter
+// function sayHello(name: string, age: any, address?: string) { // เลือก address ว่ามีค่าหรือไม่มีก็ได้
+//     console.log('Hello! ' + name + ' ' + age + ' ' + address);
+// }
+
+// sayHello("Aj.M", 20);
+// sayHello("Aj.M", "20", 'Computer Science MSU');
+
+//----------------- Return value (auto return type) ไม่ต้องกำหนด data type
+// function sayHello(name: string, age: any, address?: string) {
+//     return 'Hello! ' + name + ' ' + age + ' ' + address;
+// }
+// //บังคับ return type
+// function syHello(): number {
+//     return 4
+// }
+
+// let text = sayHello("Aj.M", 20);
+// console.log(text);
+
+// console.log(sayHello("Aj.M", "20", "Computer Science MSU"));
+
+//-----------------String interpolation การแทรกตัวแปร
+// function sayHello(name: string, age: any, address?: string) {
+//     return `Hello! ${name} ${age} ${address}`;
+// }
+// console.log(sayHello("Aj.M", "20", "Computer Science MSU"));
+
+//----------------function in flution
+// function sayHello(name: string, age: any, address?: string) {
+//     function show() {
+//         console.log(text);
+//     }
+//     let text = `Hello! ${name} ${age} ${address}`;
+//     show();
+// }
+
+// sayHello("Aj.M", "20", "Computer Science MSU");
