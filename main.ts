@@ -112,3 +112,33 @@
 // }
 
 // sayHello("Aj.M", "20", "Computer Science MSU");
+
+//================================================================ Arrow functions "=>"
+// let func = () => {     // () => {} คือ function
+//     console.log('This is an anonymous function');
+// };
+
+// func();
+
+// let func = () => console.log('This is one line anonymous function');// function in line 
+
+// func();
+//---------------------------------function variable
+// let doSomething = () => {
+//     let dateTime = new Date();
+//     console.log(dateTime + ' Fuction doSomething is executed...');
+// }
+
+// setTimeout(doSomething, 2000);//sleep in java
+// setTimeout(doSomething, 3000);
+// setTimeout(() => {
+//     let dateTime = new Date();
+//     console.log(dateTime + " Fuction doSomething is executed...");
+// }, 4000);
+
+//-------------------------------function export and import
+// import anyName from "./utils";
+
+// let text = anyName("jung");
+// console.log(text);
+
