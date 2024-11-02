@@ -142,3 +142,110 @@
 // let text = anyName("jung");
 // console.log(text);
 
+//==================================================Json and class
+
+// const json = {
+//     name: "Aj.M", //name ข้างหน้าเป็น key ไม่ต้องใส่ ""
+//     age: 20,
+//     work: "Computer Science, MSU",
+//     show() {
+//         console.log(this.name);
+//     }
+// };
+// console.log(typeof (json));
+// console.log(json);
+// console.log(json.name);
+// console.log(json.show()); // มันขึ้น undefined เพราะว่า ใน show ไม่มี return ออกมาปริ้นนั้นเอง
+// json.show()//ใช่แบบนี้ได้เลย
+//------------------------serialization การเปลี่ยน opject ให้เป็น jsonstring ที่ไม่มี func
+// const json = {
+//     name: "Aj.M",
+//     age: 20,
+//     work: "Computer Science, MSU",
+//     show() {
+//         console.log(this.name);
+//     }
+// };
+// console.log(typeof (json));
+// console.log(json);
+// console.log(typeof (JSON.stringify(json)));
+// console.log(JSON.stringify(json));
+// console.log(json.name);
+//------------------------Json.parse() แปลง  json ให้เป็น json opject
+// const json = {
+//     name: "Aj.M",
+//     age: 20,
+//     work: "Computer Science, MSU",
+//     show() {
+//         console.log(this.name);
+//     }
+// };
+// let jsonStr: string = JSON.stringify(json);
+// const jsonObj = JSON.parse(jsonStr);
+// console.log(jsonObj);
+// console.log(jsonObj.name);
+// ==========================Class=======================
+// class User {
+//     private name: string = "";
+//     private age: number = 0;
+//     public work: string = "";
+//     constructor(name: string) {
+//         this.name = name;
+//     }
+
+//     public setName(name: string) {
+//         this.name = name;
+//     }
+
+//     public getName() {
+//         return this.name;
+//     }
+
+//     public set Age(age: number) {
+//         this.age = age;
+//     }
+
+//     public get Age() {
+//         return this.age;
+//     }
+//     // add(x: number, y: number): number;
+//     // add(x: string, y: string): string;
+//     // add(x: any, y: any): any {
+//     //     if (typeof x === "number" && typeof y === "number") {
+//     //         return x + y;
+//     //     } else if (typeof x === "string" && typeof y === "string") {
+//     //         return x + y;
+//     //     } else {
+//     //         return x + y;
+//     //     }
+//     // }
+//     add(x?: any, y?: any): any {
+//         if (typeof x === "number" && typeof y === "number") {
+//             return x + y;
+//         } else if (typeof x === "string" && typeof y === "string") {
+//             return x + y;
+//         } else {
+//             return x + y;
+//         }
+//     }
+
+
+// }
+// let user: User = new User('Aj.M');
+// user.Age = 20;
+// user.work = 'CS MSU'
+// console.log(`${user.getName()} ${user.Age} ${user.work}`);
+
+// user.setName("Potchara");
+// console.log(`${user.getName()} ${user.Age} ${user.work}`);
+// //----------------------------Overloading function
+
+
+// // // let text = user.add("1111", "000");
+// // let text = user.add(1111, 111);
+
+// // console.log(text);
+
+
+// let text = user.add("1111");
+// console.log(text);
