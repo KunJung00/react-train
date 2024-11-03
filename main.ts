@@ -249,3 +249,93 @@
 
 // let text = user.add("1111");
 // console.log(text);
+
+//===================================================Array
+// let activiies = ['Sports', 'Programming', 'Eating', 'Sleeping'];
+// activiies.push('BoardGaming');
+// console.log(activiies);
+
+// let idx = activiies.indexOf('programming');
+// console.log(idx);
+
+// activiies.splice(idx, 1);
+// console.log(activiies);
+
+// activiies = ["Sports", "Programming", "Eating", "Sleeping"];
+// activiies.push("BoardGaming");
+
+// idx = activiies.indexOf("Programming");
+// console.log(idx);
+
+// activiies.splice(idx, 1);
+// console.log(activiies);
+
+//--------------------- array function
+
+// let activiies = ['Sports', 'Programming', 'Eating', 'Sleeping'];
+// activiies.push('BoardGaming');
+// console.log(activiies);
+
+// let indexes = activiies.findIndex((item) => {
+//     return item.toLowerCase() === 'eating';
+// });
+
+// console.log(indexes);
+
+//------------------------filter
+// let activiies = ["Sports", "Programming", "Eating", "Sleeping"];
+// activiies.push("BoardGaming");
+// console.log(activiies);
+
+// let filtered = activiies.filter((item) => item.endsWith("ing")); // endsWith คือ ข้อมูลที่ลงท้ายด้วย
+
+// console.log(filtered);
+
+//-------------------------map การ fetch ไอเทมทั้งหมด
+// let activiies = ['Sports', 'Programming', 'Eating', 'Sleeping'];
+// activiies.push('BoardGaming');
+// console.log(activiies);
+
+// activiies.map((item) => {
+//     console.log(item);
+// });
+
+//--------------------------Spread operator การขยายช่องอาร์เร ใน array หรือ opject
+// let activiies = ["Sports", "Programming", "Eating", "Sleeping"];
+// let newActiviies = ["Traveling", "Gaming"];
+// let allActivities = [activiies, newActiviies];//ใส่ข้อมูลที่เป็น opject array ใน array ได้
+// console.log(allActivities);
+
+//-------------------------กระจายข้อมูลแทนการโชว์เป็น opject
+// let activiies = ["Sports", "Programming", "Eating", "Sleeping"];
+// let newActiviies = ["Traveling", "Gaming"];
+// let allActivities = [...activiies, ...newActiviies];// '...' จะเป็น การดึง ข้อมูลที่อยู่ใน opject array ออกมาแทน
+// console.log(allActivities);
+
+//-----------------------opject in opject
+// let user = {
+//     name: 'Aj.M',
+//     postion: 'Lecturer'
+// }
+
+// let admin = {
+//     isAdmin: true,
+//     user
+// }
+
+// console.log(admin);
+
+//--------------------การจายข้อมูล opject ที่อยู่ใน opject
+let user = {
+    name: 'Aj.M',
+    postion: 'Lecturer'
+}
+
+let admin = {
+    isAdmin: true,
+    ...user
+}
+
+console.log(admin);
+
+
