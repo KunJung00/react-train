@@ -120,7 +120,7 @@
 
 // func();
 
-// let func = () => console.log('This is one line anonymous function');// function in line 
+// let func = () => console.log('This is one line anonymous function');// function in line
 
 // func();
 //---------------------------------function variable
@@ -326,16 +326,30 @@
 // console.log(admin);
 
 //--------------------การจายข้อมูล opject ที่อยู่ใน opject
-let user = {
-    name: 'Aj.M',
-    postion: 'Lecturer'
-}
+// let user = {
+//     name: 'Aj.M',
+//     postion: 'Lecturer'
+// }
 
-let admin = {
-    isAdmin: true,
-    ...user
-}
+// let admin = {
+//     isAdmin: true,
+//     ...user
+// }
 
-console.log(admin);
+// console.log(admin);
 
+//====================================================DeStructuring จากมีโครงสร้างเป็นไม่มีโครงสร้าง
+// let [fullname, position] = ['Aj.M', 'Front-end Developer'];
+// console.log(fullname);
+// console.log(position);
+
+//-----------------------หรือใช่เปลี่ยนชื่อ attribute
+let { fullname: namex, position, salary: income } = {
+    fullname: "Aj.M",
+    position: "Back-end Developer",
+    salary: 250000
+};
+console.log(namex);
+console.log(position);
+console.log(income); 
 
