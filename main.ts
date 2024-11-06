@@ -344,12 +344,45 @@
 // console.log(position);
 
 //-----------------------หรือใช่เปลี่ยนชื่อ attribute
-let { fullname: namex, position, salary: income } = {
-    fullname: "Aj.M",
-    position: "Back-end Developer",
-    salary: 250000
-};
-console.log(namex);
-console.log(position);
-console.log(income); 
+// let { fullname: namex, position, salary: income } = {
+//     fullname: "Aj.M",
+//     position: "Back-end Developer",
+//     salary: 250000
+// };
+// console.log(namex);
+// console.log(position);
+// console.log(income); 
 
+//==================================================control statements เงื่อนไข พวก if-else และ อื่นๆ
+
+// const userKey = prompt("input key") //prompt ใช่ได้แค่ใน brownser เท่านั้น
+
+// if (userKey == '1234') {
+//     console.log('Enter with 1234');
+// } else if (userKey == '9999') {
+//     console.log("Enter with 9999");
+// } else {
+//     console.log("Enter WRONG key");
+// }
+
+//----------------------loop
+// const users = ["Aj.M", "admin", "user1", "someone"];
+
+// for (let index = 0; index < users.length; index++) {
+//     console.log(users[index]);
+// }
+
+// console.log('=======');
+
+// for (const user of users) {
+//     console.log(user);
+// }
+
+//-----------------while loop
+const users = ["Aj.M", "admin", "user1", "someone"];
+
+let idx = 0;
+while (idx < users.length) {
+    console.log(users[idx]);
+    idx++;
+}
